@@ -20,6 +20,24 @@ yarn
 yarn start
 
 # -- using npm: --
-npm install
+npm install or npm npm i --legacy-peer-deps
 npm run start
 ```
+
+run err
+```
+Error: error:0308010C:digital envelope routines::unsupported
+
+时方案（推荐）：
+在运行命令前设置环境变量：
+
+```bash
+export NODE_OPTIONS=--openssl-legacy-provider
+```
+或Windows系统：
+
+```cmd
+set NODE_OPTIONS=--openssl-legacy-provider
+```
+```
+
